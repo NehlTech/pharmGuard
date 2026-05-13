@@ -1,0 +1,14 @@
+# PharmGuard runtime requirements
+#
+# This file lists ONLY packages that Colab does not ship by default.
+# We intentionally do not pin numpy/torch/transformers/etc. — Colab's
+# defaults work fine, and pinning them causes more problems than it
+# solves on shared compute.
+#
+# If you run this locally outside Colab, you will additionally need
+# the standard ML stack (numpy, torch, transformers, datasets, etc.)
+# at any reasonable recent version.
+
+bert-score>=0.3.13
+imbalanced-learn>=0.12.0
+langdetect>=1.0.9

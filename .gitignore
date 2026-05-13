@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Project secrets — never commit
+.hf_token
+.env
+*.pem
+*.key
+
+# Project artifacts (these live on Drive, not in repo)
+results/
+checkpoints/
+logs/
+pharma_data/
+hf_cache/
+pharmguard_workspace/
+*.parquet
+*.pkl
+*.pt
+*.pth
+*.csv
+!tests/**/*.csv
+
+# Build artifacts
+build/
+dist/
+*.egg
